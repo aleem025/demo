@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite failures="1" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="4" time="40.109234">
+<testcase classname="Login" name="Login to SugarCRM" time="10.565154">
+<system-out><![CDATA[Given I am on SugarCRM login page...........................................passed
+When I enter "raghav" and "admin"...........................................passed
+And click on Login button...................................................passed
+Then I should be able to login or see error based on if the credentials are "true" or not.passed
+]]></system-out>
+</testcase>
+<testcase classname="Login" name="Login to SugarCRM 2" time="5.760734">
+<failure message="java.lang.AssertionError: Error is displayed when logging in.Error:&#13;&#10;&#9;at org.junit.Assert.fail(Assert.java:88)&#13;&#10;&#9;at org.junit.Assert.assertTrue(Assert.java:41)&#13;&#10;&#9;at org.junit.Assert.assertFalse(Assert.java:64)&#13;&#10;&#9;at com.valsatech.bdd.gui.stepdefs.Login.i_should_be_able_to_login_or_see_error_based_on_if_the_credentials_are_or_not(Login.java:68)&#13;&#10;&#9;at ✽.Then I should be able to login or see error based on if the credentials are &quot;true&quot; or not(1-Login.feature:10)&#13;&#10;"><![CDATA[Given I am on SugarCRM login page...........................................passed
+When I enter "chandra" and "valsatech"......................................passed
+And click on Login button...................................................passed
+Then I should be able to login or see error based on if the credentials are "true" or not.failed
+
+StackTrace:
+java.lang.AssertionError: Error is displayed when logging in.Error:
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at org.junit.Assert.assertFalse(Assert.java:64)
+	at com.valsatech.bdd.gui.stepdefs.Login.i_should_be_able_to_login_or_see_error_based_on_if_the_credentials_are_or_not(Login.java:68)
+	at ✽.Then I should be able to login or see error based on if the credentials are "true" or not(1-Login.feature:10)
+]]></failure>
+</testcase>
+<testcase classname="Menu Items" name="Check Menu Items and Sub Menu Items" time="9.464849">
+<system-out><![CDATA[Given I am on SugarCRM login page...........................................passed
+When I enter "{app.user}" and "{app.password}"..............................passed
+And click on Login button...................................................passed
+Then I should be able to login or see error based on if the credentials are "true" or not.passed
+Given there are following Menu Items:.......................................passed
+When I hover over the Menu Items............................................passed
+Then I should see the following Sub Menus:..................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Create Account" name="Create an Account under Sales" time="14.318497">
+<system-out><![CDATA[Given I am on SugarCRM login page...........................................passed
+When I enter "{app.user}" and "{app.password}"..............................passed
+And click on Login button...................................................passed
+Then I should be able to login or see error based on if the credentials are "true" or not.passed
+Given I am in "Sales" module................................................passed
+And I am on Create Account page.............................................passed
+When I enter the details to add an account and Save:........................passed
+Then the account should be added successfully...............................passed
+And I should have an entry for the added record in database:................passed
+]]></system-out>
+</testcase>
+</testsuite>

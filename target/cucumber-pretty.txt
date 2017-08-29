@@ -1,0 +1,71 @@
+Feature: Login
+  As a user
+  I want to login to SugarCRM
+  So that I can use the features of application
+
+  Scenario Outline: Login to SugarCRM                                                            [90m# 1-Login.feature:6[0m
+    [36mGiven [0m[36mI am on SugarCRM login page[0m
+    [36mWhen [0m[36mI enter "<username>" and "<password>"[0m
+    [36mAnd [0m[36mclick on Login button[0m
+    [36mThen [0m[36mI should be able to login or see error based on if the credentials are "<valid>" or not[0m
+
+    Examples: 
+[34mnull[0m
+
+  Scenario Outline: Login to SugarCRM                                                         [90m# 1-Login.feature:14[0m
+    [32mGiven [0m[32mI am on SugarCRM login page[0m                                                         [90m# Login.i_am_on_SugarCRM_login_page()[0m
+    [32mWhen [0m[32mI enter "[0m[32m[1mraghav[0m[32m" and "[0m[32m[1madmin[0m[32m"[0m                                                         [90m# Login.i_enter_and(String,String)[0m
+    [32mAnd [0m[32mclick on Login button[0m                                                                 [90m# Login.click_on_Login_button()[0m
+    [32mThen [0m[32mI should be able to login or see error based on if the credentials are "[0m[32m[1mtrue[0m[32m" or not[0m [90m# Login.i_should_be_able_to_login_or_see_error_based_on_if_the_credentials_are_or_not(String)[0m
+
+  Scenario Outline: Login to SugarCRM                                                         [90m# 1-Login.feature:15[0m
+    [32mGiven [0m[32mI am on SugarCRM login page[0m                                                         [90m# Login.i_am_on_SugarCRM_login_page()[0m
+    [32mWhen [0m[32mI enter "[0m[32m[1mchandra[0m[32m" and "[0m[32m[1mvalsatech[0m[32m"[0m                                                    [90m# Login.i_enter_and(String,String)[0m
+    [32mAnd [0m[32mclick on Login button[0m                                                                 [90m# Login.click_on_Login_button()[0m
+    [31mThen [0m[31mI should be able to login or see error based on if the credentials are "[0m[31m[1mtrue[0m[31m" or not[0m [90m# Login.i_should_be_able_to_login_or_see_error_based_on_if_the_credentials_are_or_not(String)[0m
+      [31mjava.lang.AssertionError: Error is displayed when logging in.Error:
+      	at org.junit.Assert.fail(Assert.java:88)
+      	at org.junit.Assert.assertTrue(Assert.java:41)
+      	at org.junit.Assert.assertFalse(Assert.java:64)
+      	at com.valsatech.bdd.gui.stepdefs.Login.i_should_be_able_to_login_or_see_error_based_on_if_the_credentials_are_or_not(Login.java:68)
+      	at ✽.Then I should be able to login or see error based on if the credentials are "true" or not(1-Login.feature:10)
+      [0m
+Feature: Menu Items
+  As a user
+  After I login to SugarCRM
+  I should see various Menu and Sub Menu Items
+[34mnull[0m
+
+  Background: Login to SugarCRM                                                               [90m# 2-Menu Items.feature:6[0m
+    [32mGiven [0m[32mI am on SugarCRM login page[0m                                                         [90m# Login.i_am_on_SugarCRM_login_page()[0m
+    [32mWhen [0m[32mI enter "[0m[32m[1m{app.user}[0m[32m" and "[0m[32m[1m{app.password}[0m[32m"[0m                                            [90m# Login.i_enter_and(String,String)[0m
+    [32mAnd [0m[32mclick on Login button[0m                                                                 [90m# Login.click_on_Login_button()[0m
+    [32mThen [0m[32mI should be able to login or see error based on if the credentials are "[0m[32m[1mtrue[0m[32m" or not[0m [90m# Login.i_should_be_able_to_login_or_see_error_based_on_if_the_credentials_are_or_not(String)[0m
+
+  Scenario: Check Menu Items and Sub Menu Items [90m# 2-Menu Items.feature:12[0m
+    [32mGiven [0m[32mthere are following Menu Items:[0m       [90m# Common.there_are_following_Menu_Items(String>)[0m
+    [32mWhen [0m[32mI hover over the Menu Items[0m            [90m# Common.i_hover_over_the_Menu_Items()[0m
+    [32mThen [0m[32mI should see the following Sub Menus:[0m  [90m# Common.i_should_see_the_following_Sub_Menus(String,String>)[0m
+Feature: Create Account
+  As a user
+  I want to create an account under different modules
+  So that I can assign related opportunities, contacts and leads to the account
+[34mnull[0m
+
+  Background: Login to SugarCRM                                                               [90m# 3-Create Account.feature:6[0m
+    [32mGiven [0m[32mI am on SugarCRM login page[0m                                                         [90m# Login.i_am_on_SugarCRM_login_page()[0m
+    [32mWhen [0m[32mI enter "[0m[32m[1m{app.user}[0m[32m" and "[0m[32m[1m{app.password}[0m[32m"[0m                                            [90m# Login.i_enter_and(String,String)[0m
+    [32mAnd [0m[32mclick on Login button[0m                                                                 [90m# Login.click_on_Login_button()[0m
+    [32mThen [0m[32mI should be able to login or see error based on if the credentials are "[0m[32m[1mtrue[0m[32m" or not[0m [90m# Login.i_should_be_able_to_login_or_see_error_based_on_if_the_credentials_are_or_not(String)[0m
+[34mnull[0m
+[34mThis is a custom message -- Account saved successfully[0m
+[34mnull[0m
+[34mThe name as saved in DB is : Sample Organization[0m
+[34mThe id as saved in DB is : ef4e8619-fc9c-59c2-39d7-580922216574[0m
+
+  Scenario: Create an Account under Sales                        [90m# 3-Create Account.feature:12[0m
+    [32mGiven [0m[32mI am in "[0m[32m[1mSales[0m[32m" module[0m                                 [90m# Common.i_am_in_module(String)[0m
+    [32mAnd [0m[32mI am on Create Account page[0m                              [90m# Common.i_am_on_Create_Account_page()[0m
+    [32mWhen [0m[32mI enter the details to add an account and Save:[0m         [90m# CreateAccount.i_enter_the_details_to_add_an_account(String,String>)[0m
+    [32mThen [0m[32mthe account should be added successfully[0m                [90m# CreateAccount.the_account_should_be_added_successfully()[0m
+    [32mAnd [0m[32mI should have an entry for the added record in database:[0m [90m# CreateAccount.i_should_have_an_entry_for_the_added_record_in_database(String,String>)[0m

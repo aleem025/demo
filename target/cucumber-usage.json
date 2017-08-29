@@ -1,0 +1,280 @@
+[
+  {
+    "source": "^I hover over the Menu Items$",
+    "steps": [
+      {
+        "name": "I hover over the Menu Items",
+        "aggregatedDurations": {
+          "average": 0.000021333,
+          "median": 0.000021333
+        },
+        "durations": [
+          {
+            "duration": 0.000021333,
+            "location": "2-Menu Items.feature:15"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^I should see the following Sub Menus:$",
+    "steps": [
+      {
+        "name": "I should see the following Sub Menus:",
+        "aggregatedDurations": {
+          "average": 1.014798611,
+          "median": 1.014798611
+        },
+        "durations": [
+          {
+            "duration": 1.014798611,
+            "location": "2-Menu Items.feature:16"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^I should have an entry for the added record in database:$",
+    "steps": [
+      {
+        "name": "I should have an entry for the added record in database:",
+        "aggregatedDurations": {
+          "average": 0.173323388,
+          "median": 0.173323388
+        },
+        "durations": [
+          {
+            "duration": 0.173323388,
+            "location": "3-Create Account.feature:18"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^I am in \"([^\"]*)\" module$",
+    "steps": [
+      {
+        "name": "I am in \"Sales\" module",
+        "aggregatedDurations": {
+          "average": 0.087282534,
+          "median": 0.087282534
+        },
+        "durations": [
+          {
+            "duration": 0.087282534,
+            "location": "3-Create Account.feature:13"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^I am on SugarCRM login page$",
+    "steps": [
+      {
+        "name": "I am on SugarCRM login page",
+        "aggregatedDurations": {
+          "average": 2.022098756,
+          "median": 1.979494526
+        },
+        "durations": [
+          {
+            "duration": 2.159832826,
+            "location": "1-Login.feature:7"
+          },
+          {
+            "duration": 1.969573148,
+            "location": "1-Login.feature:7"
+          },
+          {
+            "duration": 1.981944106,
+            "location": "2-Menu Items.feature:7"
+          },
+          {
+            "duration": 1.977044947,
+            "location": "3-Create Account.feature:7"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^I should be able to login or see error based on if the credentials are \"(.*?)\" or not$",
+    "steps": [
+      {
+        "name": "I should be able to login or see error based on if the credentials are \"true\" or not",
+        "aggregatedDurations": {
+          "average": 2.485771001,
+          "median": 2.177716868
+        },
+        "durations": [
+          {
+            "duration": 3.149762311,
+            "location": "1-Login.feature:10"
+          },
+          {
+            "duration": 2.129833826,
+            "location": "2-Menu Items.feature:10"
+          },
+          {
+            "duration": 2.177716868,
+            "location": "3-Create Account.feature:10"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^the account should be added successfully$",
+    "steps": [
+      {
+        "name": "the account should be added successfully",
+        "aggregatedDurations": {
+          "average": 0.053342004,
+          "median": 0.053342004
+        },
+        "durations": [
+          {
+            "duration": 0.053342004,
+            "location": "3-Create Account.feature:17"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^I enter the details to add an account and Save:$",
+    "steps": [
+      {
+        "name": "I enter the details to add an account and Save:",
+        "aggregatedDurations": {
+          "average": 2.896367053,
+          "median": 2.896367053
+        },
+        "durations": [
+          {
+            "duration": 2.896367053,
+            "location": "3-Create Account.feature:15"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^I enter \"(.*?)\" and \"(.*?)\"$",
+    "steps": [
+      {
+        "name": "I enter \"raghav\" and \"admin\"",
+        "aggregatedDurations": {
+          "average": 0.229331663,
+          "median": 0.229331663
+        },
+        "durations": [
+          {
+            "duration": 0.229331663,
+            "location": "1-Login.feature:8"
+          }
+        ]
+      },
+      {
+        "name": "I enter \"chandra\" and \"valsatech\"",
+        "aggregatedDurations": {
+          "average": 0.243708743,
+          "median": 0.243708743
+        },
+        "durations": [
+          {
+            "duration": 0.243708743,
+            "location": "1-Login.feature:8"
+          }
+        ]
+      },
+      {
+        "name": "I enter \"{app.user}\" and \"{app.password}\"",
+        "aggregatedDurations": {
+          "average": 0.227718231,
+          "median": 0.227718231
+        },
+        "durations": [
+          {
+            "duration": 0.224682973,
+            "location": "2-Menu Items.feature:8"
+          },
+          {
+            "duration": 0.230753489,
+            "location": "3-Create Account.feature:8"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^I am on Create Account page$",
+    "steps": [
+      {
+        "name": "I am on Create Account page",
+        "aggregatedDurations": {
+          "average": 2.747245137,
+          "median": 2.747245137
+        },
+        "durations": [
+          {
+            "duration": 2.747245137,
+            "location": "3-Create Account.feature:14"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^there are following Menu Items:$",
+    "steps": [
+      {
+        "name": "there are following Menu Items:",
+        "aggregatedDurations": {
+          "average": 0.114872449,
+          "median": 0.114872449
+        },
+        "durations": [
+          {
+            "duration": 0.114872449,
+            "location": "2-Menu Items.feature:13"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "source": "^click on Login button$",
+    "steps": [
+      {
+        "name": "click on Login button",
+        "aggregatedDurations": {
+          "average": 1.098476899,
+          "median": 1.23613798
+        },
+        "durations": [
+          {
+            "duration": 1.343308111,
+            "location": "1-Login.feature:9"
+          },
+          {
+            "duration": 0.578323525,
+            "location": "1-Login.feature:9"
+          },
+          {
+            "duration": 1.229906477,
+            "location": "2-Menu Items.feature:9"
+          },
+          {
+            "duration": 1.242369484,
+            "location": "3-Create Account.feature:9"
+          }
+        ]
+      }
+    ]
+  }
+]
